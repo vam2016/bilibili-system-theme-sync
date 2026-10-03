@@ -1,0 +1,19 @@
+{
+  "name": "bilibili-system-theme-sync",
+  "version": "1.0.0",
+  "private": true,
+  "description": "B站主题实时跟随系统外观的油猴脚本",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "check": "node --check bilibili-system-theme.user.js",
+    "test": "node tests/browser.cjs --fixture-only && node tests/isolated.cjs",
+    "test:live": "node tests/browser.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
